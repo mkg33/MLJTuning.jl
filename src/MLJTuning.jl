@@ -7,7 +7,7 @@ module MLJTuning
 export TunedModel
 
 # defined in strategies/:
-export Explicit, Grid, RandomSearch, LatinHypercube
+export Explicit, Grid, RandomSearch, LatinHypercube, LatinHypercube2
 
 # defined in selection_heuristics/:
 export NaiveSelection
@@ -45,6 +45,7 @@ include("strategies/explicit.jl")
 include("strategies/grid.jl")
 include("strategies/random_search.jl")
 include("strategies/latin_hypercube.jl")
+include("strategies/latin_hypercube.2jl")
 include("tuned_models.jl")
 include("range_methods.jl")
 include("plotrecipes.jl")
